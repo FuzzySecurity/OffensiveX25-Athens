@@ -1,0 +1,36 @@
+{
+  "name": "starlight",
+  "displayName": "Starlight",
+  "description": "Nothing passes door and window here save moonlight and starlight",
+  "version": "0.0.1",
+  "author": "Ruben Boonen",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*",
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "starlight.helloWorld",
+        "title": "Hello World",
+        "category": "Starlight"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "echo 'No compilation needed for JS'"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0"
+  },
+  "dependencies": {
+  }
+} 
